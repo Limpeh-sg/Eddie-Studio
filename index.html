@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eddie Tang | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3010d94d2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav flex items-center justify-between">
+        <div class="logo">
+          <a href="#home" class="logo-link">
+            <span class="name-en">Eddie Tang</span>
+            <span class="name-cn">唐楷航</span>
+          </a>
+        </div>
+        
+        <div class="nav-container flex items-center">
+          <ul class="nav-links flex">
+            <li><a href="#home" data-en="Home" data-cn="首页" class="active">Home</a></li>
+            <li><a href="#portfolio" data-en="Portfolio" data-cn="作品集">Portfolio</a></li>
+            <li><a href="#about" data-en="About" data-cn="关于我">About</a></li>
+            <li><a href="#contact" data-en="Contact" data-cn="联系">Contact</a></li>
+            <li><a href="#blog" data-en="Blog" data-cn="博客">Blog</a></li>
+          </ul>
+          
+          <div class="language-switch">
+            <button id="lang-en" class="lang-btn active">EN</button>
+            <span class="divider">|</span>
+            <button id="lang-cn" class="lang-btn">中文</button>
+          </div>
+          
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content flex">
+        <div class="hero-text">
+          <h1>
+            <span class="full-name-en">Tang Kaihang (Eddie)</span>
+            <span class="full-name-cn">唐楷航 (Eddie)</span>
+          </h1>
+          <p class="tagline" data-en="Hi, I'm Eddie – a cross-functional marketing professional blending design, digital strategy, and operations." data-cn="您好，我是Eddie - 一位融合设计、数字策略和运营的跨职能营销专业人士。">
+            Hi, I'm Eddie – a cross-functional marketing professional blending design, digital strategy, and operations.
+          </p>
+          <div class="cta-buttons flex gap-16">
+            <a href="#contact" class="btn btn--primary" data-en="Let's Work Together" data-cn="让我们合作">Let's Work Together</a>
+            <a href="#portfolio" class="btn btn--outline" data-en="View My Work" data-cn="查看我的作品">View My Work</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder for hero image -->
+          <div class="placeholder-img">
+            <i class="fas fa-user-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills Overview -->
+  <section class="skills-overview">
+    <div class="container">
+      <h2 class="section-title" data-en="What I Do" data-cn="我的专长">What I Do</h2>
+      
+      <div class="skills-container">
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3 data-en="Marketing" data-cn="营销">Marketing</h3>
+          <ul>
+            <li data-en="Digital Strategy" data-cn="数字策略">Digital Strategy</li>
+            <li data-en="Social Media Marketing" data-cn="社交媒体营销">Social Media Marketing</li>
+            <li data-en="Content Creation" data-cn="内容创作">Content Creation</li>
+            <li data-en="Campaign Management" data-cn="活动管理">Campaign Management</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3 data-en="Design" data-cn="设计">Design</h3>
+          <ul>
+            <li data-en="Visual Merchandising" data-cn="视觉营销">Visual Merchandising</li>
+            <li data-en="Brand Identity" data-cn="品牌标识">Brand Identity</li>
+            <li data-en="UI/UX Design" data-cn="UI/UX设计">UI/UX Design</li>
+            <li data-en="Photography" data-cn="摄影">Photography</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+          <h3 data-en="Operations" data-cn="运营">Operations</h3>
+          <ul>
+            <li data-en="Process Optimization" data-cn="流程优化">Process Optimization</li>
+            <li data-en="Team Management" data-cn="团队管理">Team Management</li>
+            <li data-en="Project Coordination" data-cn="项目协调">Project Coordination</li>
+            <li data-en="Data Analysis" data-cn="数据分析">Data Analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title" data-en="Portfolio" data-cn="作品集">Portfolio</h2>
+      
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all" data-en="All" data-cn="全部">All</button>
+        <button class="filter-btn" data-filter="Visual Merchandising & Graphic Design" data-en="Visual Merchandising & Graphic Design" data-cn="视觉营销与平面设计">Visual Merchandising & Graphic Design</button>
+        <button class="filter-btn" data-filter="Video & Photography Projects" data-en="Video & Photography Projects" data-cn="视频与摄影项目">Video & Photography Projects</button>
+        <button class="filter-btn" data-filter="IP Branding & Web Design" data-en="IP Branding & Web Design" data-cn="IP品牌与网页设计">IP Branding & Web Design</button>
+        <button class="filter-btn" data-filter="Marketing Campaigns" data-en="Marketing Campaigns" data-cn="营销活动">Marketing Campaigns</button>
+        <button class="filter-btn" data-filter="Operations & HR Experience" data-en="Operations & HR Experience" data-cn="运营与人力资源经验">Operations & HR Experience</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-item" data-category="Visual Merchandising & Graphic Design">
+          <div class="portfolio-item-inner card">
+            <div class="portfolio-img">
+              <div class="placeholder-img">
+                <i class="fas fa-store"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-en="Retail Store Display Concept" data-cn="零售店展示概念">Retail Store Display Concept</h3>
+              <p data-en="Created compelling visual merchandising concepts for tech retail stores, increasing foot traffic by 35%" data-cn="为科技零售店创建引人注目的视觉营销概念，客流量增加35%">
+                Created compelling visual merchandising concepts for tech retail stores, increasing foot traffic by 35%
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">Visual Design</span>
+                <span class="tag">Retail</span>
+                <span class="tag">Brand Experience</span>
+              </div>
+              <button class="btn btn--outline view-details" data-en="View Details" data-cn="查看详情">View Details</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="portfolio-item" data-category="Video & Photography Projects">
+          <div class="portfolio-item-inner card">
+            <div class="portfolio-img">
+              <div class="placeholder-img">
+                <i class="fas fa-video"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-en="星星闪送 Brand Video Campaign" data-cn="星星闪送品牌视频营销">星星闪送 Brand Video Campaign</h3>
+              <p data-en="Produced promotional video content for XingXing Flash delivery service, achieving 2M+ views across platforms" data-cn="为星星闪送配送服务制作推广视频内容，跨平台浏览量超过200万次">
+                Produced promotional video content for XingXing Flash delivery service, achieving 2M+ views across platforms
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">Video Production</span>
+                <span class="tag">Social Media</span>
+                <span class="tag">Brand Campaign</span>
+              </div>
+              <button class="btn btn--outline view-details" data-en="View Details" data-cn="查看详情">View Details</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="portfolio-item" data-category="IP Branding & Web Design">
+          <div class="portfolio-item-inner card">
+            <div class="portfolio-img">
+              <div class="placeholder-img">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-en="Character IP Development" data-cn="角色IP开发">Character IP Development</h3>
+              <p data-en="Designed original mascot characters and brand identity system for emerging lifestyle brand" data-cn="为新兴生活方式品牌设计原创吉祥物角色和品牌标识系统">
+                Designed original mascot characters and brand identity system for emerging lifestyle brand
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">Character Design</span>
+                <span class="tag">Brand Identity</span>
+                <span class="tag">IP Creation</span>
+              </div>
+              <button class="btn btn--outline view-details" data-en="View Details" data-cn="查看详情">View Details</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="portfolio-item" data-category="Marketing Campaigns">
+          <div class="portfolio-item-inner card">
+            <div class="portfolio-img">
+              <div class="placeholder-img">
+                <i class="fab fa-tiktok"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-en="TikTok Growth Strategy" data-cn="TikTok增长策略">TikTok Growth Strategy</h3>
+              <p data-en="Developed viral content strategy resulting in 500K+ followers growth within 3 months" data-cn="开发病毒式内容策略，3个月内粉丝增长50万+">
+                Developed viral content strategy resulting in 500K+ followers growth within 3 months
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">Social Media</span>
+                <span class="tag">Content Strategy</span>
+                <span class="tag">Growth Hacking</span>
+              </div>
+              <button class="btn btn--outline view-details" data-en="View Details" data-cn="查看详情">View Details</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="portfolio-item" data-category="Operations & HR Experience">
+          <div class="portfolio-item-inner card">
+            <div class="portfolio-img">
+              <div class="placeholder-img">
+                <i class="fas fa-tasks"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-en="Team Workflow Optimization" data-cn="团队工作流程优化">Team Workflow Optimization</h3>
+              <p data-en="Streamlined cross-department processes reducing project delivery time by 40%" data-cn="简化跨部门流程，项目交付时间缩短40%">
+                Streamlined cross-department processes reducing project delivery time by 40%
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">Process Optimization</span>
+                <span class="tag">Team Management</span>
+                <span class="tag">Efficiency</span>
+              </div>
+              <button class="btn btn--outline view-details" data-en="View Details" data-cn="查看详情">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Project Modal -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-content card">
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image">
+          <div class="placeholder-img large">
+            <i id="modal-icon" class="fas"></i>
+          </div>
+        </div>
+        <div class="modal-details">
+          <p id="modal-description"></p>
+          <div class="modal-tags" id="modal-tags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title" data-en="About Me" data-cn="关于我">About Me</h2>
+      
+      <div class="about-container flex">
+        <div class="about-image">
+          <div class="placeholder-img large">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <h3 data-en="My Story" data-cn="我的故事">My Story</h3>
+          <p data-en="I'm a versatile marketing professional with expertise across design, digital strategy, and operations. With experience in both startup and corporate environments, I bring a unique blend of creativity and business acumen to every project." data-cn="我是一位多才多艺的营销专业人士，在设计、数字策略和运营方面拥有专业知识。凭借在初创企业和企业环境中的经验，我为每个项目带来独特的创造力和商业敏锐度。">
+            I'm a versatile marketing professional with expertise across design, digital strategy, and operations. With experience in both startup and corporate environments, I bring a unique blend of creativity and business acumen to every project.
+          </p>
+          
+          <p data-en="My approach combines analytical thinking with creative problem-solving, allowing me to develop marketing solutions that not only look great but also deliver measurable results." data-cn="我的方法结合了分析思维和创造性解决问题的能力，使我能够开发不仅外观精美而且能够提供可衡量结果的营销解决方案。">
+            My approach combines analytical thinking with creative problem-solving, allowing me to develop marketing solutions that not only look great but also deliver measurable results.
+          </p>
+          
+          <div class="timeline">
+            <h3 data-en="Career Journey" data-cn="职业旅程">Career Journey</h3>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date" data-en="2023-Present" data-cn="2023年至今">2023-Present</div>
+              <div class="timeline-content">
+                <h4 data-en="Manly Explosive Growth Phase" data-cn="Manly爆发式成长阶段">Manly Explosive Growth Phase</h4>
+                <h5 data-en="Freelance Marketing & Design Consultant" data-cn="自由职业营销与设计顾问">Freelance Marketing & Design Consultant</h5>
+                <p data-en="Providing comprehensive marketing, design, and operational consulting to growing businesses" data-cn="为成长中的企业提供全面的营销、设计和运营咨询">
+                  Providing comprehensive marketing, design, and operational consulting to growing businesses
+                </p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date" data-en="2021-2022" data-cn="2021-2022年">2021-2022</div>
+              <div class="timeline-content">
+                <h4>星星闪送 (XingXing Flash)</h4>
+                <h5 data-en="Digital Marketing & Operations Lead" data-cn="数字营销与运营主管">Digital Marketing & Operations Lead</h5>
+                <p data-en="Led marketing campaigns and operational improvements for rapid delivery service" data-cn="领导快速配送服务的营销活动和运营改进">
+                  Led marketing campaigns and operational improvements for rapid delivery service
+                </p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date" data-en="2019-2020" data-cn="2019-2020年">2019-2020</div>
+              <div class="timeline-content">
+                <h4>Geniebook</h4>
+                <h5 data-en="Marketing Intern" data-cn="营销实习生">Marketing Intern</h5>
+                <p data-en="Gained foundational experience in education technology marketing and digital campaigns" data-cn="在教育科技营销和数字营销活动中获得基础经验">
+                  Gained foundational experience in education technology marketing and digital campaigns
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title" data-en="Contact Me" data-cn="联系我">Contact Me</h2>
+      
+      <div class="contact-container flex">
+        <div class="contact-form">
+          <h3 data-en="Send a Message" data-cn="发送信息">Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label" data-en="Name" data-cn="姓名">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label" data-en="Email" data-cn="邮箱">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label" data-en="Subject" data-cn="主题">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label" data-en="Message" data-cn="信息">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn--primary" data-en="Send Message" data-cn="发送信息">Send Message</button>
+          </form>
+          
+          <div id="form-status" class="form-status"></div>
+        </div>
+        
+        <div class="contact-info">
+          <h3 data-en="Get In Touch" data-cn="联系方式">Get In Touch</h3>
+          
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>eddie.tang@example.com</span>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>+65 9123 4567</span>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-en="Singapore" data-cn="新加坡">Singapore</span>
+          </div>
+          
+          <div class="info-item download-resume">
+            <a href="#" class="btn btn--outline btn--full-width">
+              <i class="fas fa-download"></i>
+              <span data-en="Download Resume" data-cn="下载简历">Download Resume</span>
+            </a>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2 class="section-title" data-en="Blog" data-cn="博客">Blog</h2>
+      
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <div class="blog-post card">
+          <div class="blog-img">
+            <div class="placeholder-img">
+              <i class="fas fa-chart-line"></i>
+            </div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category" data-en="Marketing Insights" data-cn="营销洞察">Marketing Insights</div>
+            <h3 data-en="The Future of Social Commerce in Asia" data-cn="亚洲社交商务的未来">The Future of Social Commerce in Asia</h3>
+            <p data-en="Exploring how social media and e-commerce are merging to create new opportunities for brands in Asian markets." data-cn="探索社交媒体和电子商务如何融合，为亚洲市场的品牌创造新机会。">
+              Exploring how social media and e-commerce are merging to create new opportunities for brands in Asian markets.
+            </p>
+            <a href="#" class="read-more" data-en="Read More" data-cn="阅读更多">Read More</a>
+          </div>
+        </div>
+        
+        <!-- Blog Post 2 -->
+        <div class="blog-post card">
+          <div class="blog-img">
+            <div class="placeholder-img">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category" data-en="Case Breakdown" data-cn="案例分析">Case Breakdown</div>
+            <h3 data-en="How We Grew 星星闪送's TikTok Following" data-cn="我们如何增长星星闪送的TikTok粉丝">How We Grew 星星闪送's TikTok Following</h3>
+            <p data-en="A detailed analysis of the content strategy that led to explosive growth on TikTok for a delivery service brand." data-cn="对导致配送服务品牌在TikTok上爆炸性增长的内容策略的详细分析。">
+              A detailed analysis of the content strategy that led to explosive growth on TikTok for a delivery service brand.
+            </p>
+            <a href="#" class="read-more" data-en="Read More" data-cn="阅读更多">Read More</a>
+          </div>
+        </div>
+        
+        <!-- Blog Post 3 -->
+        <div class="blog-post card">
+          <div class="blog-img">
+            <div class="placeholder-img">
+              <i class="fas fa-comments"></i>
+            </div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category" data-en="Project Retrospective" data-cn="项目回顾">Project Retrospective</div>
+            <h3 data-en="Lessons from Rebranding a Tech Startup" data-cn="科技初创公司重塑品牌的经验">Lessons from Rebranding a Tech Startup</h3>
+            <p data-en="Looking back at challenges and victories from a comprehensive rebranding project for an education technology company." data-cn="回顾教育科技公司全面品牌重塑项目中的挑战和成功。">
+              Looking back at challenges and victories from a comprehensive rebranding project for an education technology company.
+            </p>
+            <a href="#" class="read-more" data-en="Read More" data-cn="阅读更多">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content flex justify-between">
+        <div class="footer-logo">
+          <a href="#home" class="logo-link">
+            <span class="name-en">Eddie Tang</span>
+            <span class="name-cn">唐楷航</span>
+          </a>
+          <p data-en="Cross-functional marketing professional" data-cn="跨职能营销专业人士">Cross-functional marketing professional</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h4 data-en="Navigation" data-cn="导航">Navigation</h4>
+          <ul>
+            <li><a href="#home" data-en="Home" data-cn="首页">Home</a></li>
+            <li><a href="#portfolio" data-en="Portfolio" data-cn="作品集">Portfolio</a></li>
+            <li><a href="#about" data-en="About" data-cn="关于我">About</a></li>
+            <li><a href="#contact" data-en="Contact" data-cn="联系">Contact</a></li>
+            <li><a href="#blog" data-en="Blog" data-cn="博客">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 data-en="Contact" data-cn="联系">Contact</h4>
+          <p>eddie.tang@example.com</p>
+          <p>+65 9123 4567</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 <span data-en="Eddie Tang. All rights reserved." data-cn="唐楷航。保留所有权利。">Eddie Tang. All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>
